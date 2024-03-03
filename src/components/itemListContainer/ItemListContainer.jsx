@@ -16,7 +16,7 @@ const ItemListContainer = (props) => {
   return (
     <>
     <h1>{props.greeting}</h1>
-    <ItemCount/>
+    <ItemCount stock={11}/>
     <ItemList productos={productos}/>
     </>
   )
