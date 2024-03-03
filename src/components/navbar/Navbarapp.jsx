@@ -4,32 +4,32 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CardWidget from '../cardWidget/CardWidget';
 
-function Navbarapp() {
+function Navbarapp(props) {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-      <Container className='navBarCss'>
-        <Navbar.Brand href="#home"><a>JuanAPP</a></Navbar.Brand>
+      <Container className="navBarCss">
+        <img src="https://i.imgur.com/clb9adN.png" alt="" className='logo-navbar'/>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features"><a>Home</a></Nav.Link>
-            <Nav.Link href="#pricing"><a>Contacto</a></Nav.Link>
+            <Nav.Link href="#features">Home</Nav.Link>
+            <Nav.Link href="#pricing">Contacto</Nav.Link>
             <NavDropdown title="Productos" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1"><a>Nuevos</a></NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Nuevos</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-              <a>Ofertas</a>
+              Ofertas
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3"><a>Destacados</a></NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Destacados</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-              <a>Proximos Lanzamientos</a>
+              Proximos Lanzamientos
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets"><a>Ubicacion</a></Nav.Link>
+            <Nav.Link href="#deets">Ubicacion</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-            <a>Sobre Nosotros</a>
+            Sobre Nosotros
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
