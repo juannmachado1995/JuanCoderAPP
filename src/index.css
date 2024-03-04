@@ -84,3 +84,13 @@ button:focus-visible {
 .navbar-brand {
   height: 1rem;
 }
+.navBarCss{
+  
+  width: 100%;
+  margin: 0;
+}
+.bg-body-tertiary{
+  width: 100vw;
+ background-color: rgb(223, 184, 159) !important;
+  /*background-image: linear-gradient(to bottom,rgb(227, 178, 148), rgb(240, 240, 240));*/
+}

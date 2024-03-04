@@ -8,7 +8,7 @@ function Navbarapp(props) {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container className="navBarCss">
-        <img src="https://i.imgur.com/clb9adN.png" alt="" className='logo-navbar'/>
+        <img src="https://i.imgur.com/AyEaKg1.png" alt="" className='logo-navbar'/>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
