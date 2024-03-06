@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
+import { useCounter } from '../../hooks/useCounter'
 
 const ItemCount = (props) => {
     const stock = props.stock
-    const [count, setCount] = useState(1)
+    //const [count, setCount] = useState(1)
+
+    const {count, restar,sumar} = useCounter(stock)
+
     const onAdd = () => {
         console.log("compraste un item")
     }
-
+/*
     const sumar = () => {
         if (count < stock) {
             setCount(count + 1)
@@ -18,7 +22,7 @@ const ItemCount = (props) => {
         }
     }
 
-
+*/
 
     return (
         <>

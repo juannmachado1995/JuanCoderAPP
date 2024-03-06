@@ -1,7 +1,7 @@
 import React , {useEffect, useState} from 'react'
 import { getProducts } from '../../mock/fakeApi';
 import ItemList from './ItemList';
-import ItemCount from '../navbar/itemCount/ItemCount';
+import './itemListContainer.css'
 
 const ItemListContainer = (props) => {
 
@@ -15,8 +15,7 @@ const ItemListContainer = (props) => {
  
   return (
     <>
-    <h1>{props.greeting}</h1>
-    <ItemCount stock={11}/>
+    <h1 className='bienvenida-libreria'>{props.greeting}</h1>
     <ItemList productos={productos}/>
     </>
   )

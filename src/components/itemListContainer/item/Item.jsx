@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './item.css'
 
 function Item({ producto }) {
     const [showDescription, setShowDescription] = useState(false);

@@ -1,0 +1,17 @@
+.item-image {
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 7px;
+  }
+  .item-image{
+    cursor: pointer;
+  }
+  
+  .card-libros {
+    transition: transform 0.5s; 
+  }
+  
+  .card-libros:hover {
+    transform: scale(1.1); 
+  }
+  

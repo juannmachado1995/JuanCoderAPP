@@ -1,0 +1,29 @@
+
+.logo-navbar {
+    width: auto;
+    height: 70px;
+    
+   }
+   
+   .navbar-brand {
+     height: 1rem;
+   }
+   .navBarCss{
+     
+     width: 100%;
+     margin: 0;
+   }
+   .bg-body-tertiary{
+     width: 100vw;
+     color: aliceblue !important;
+     background-color: #003648 !important;
+    /*background-color: rgb(144, 184, 159) !important;*/
+     /*background-image: linear-gradient(to bottom,rgb(227, 178, 148), rgb(240, 240, 240));*/
+   }
+
+  .cartIcon{
+    font-size: 2rem;
+  }
+  .cartCantidad{
+    font-size: 1rem;
+  }
