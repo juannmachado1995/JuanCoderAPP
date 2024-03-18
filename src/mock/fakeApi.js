@@ -165,7 +165,7 @@ export const getProducts = () => {
                 resolve(productos)
             }
 
-        }, 2000)
+        }, 1000)
     })
 }
 
@@ -184,7 +184,7 @@ export const getOneProduct = (id) =>{
                 let productoBuscado = productos.find((item)=>item.id===id)
                 resolve(productoBuscado)
             }
-        },2000)
+        },1000)
     }
     )
 }

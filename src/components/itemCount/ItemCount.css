@@ -1,0 +1,45 @@
+.item-count-caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .botones {
+    display: flex;
+    align-items: center;
+  }
+  
+  .botones button {
+    background-color: #014b9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .botones button:hover {
+    background-color: #3c87d7;
+  }
+  
+  .item-contador {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .boton-comprar {
+    background-color: #116a26;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .boton-comprar:hover {
+    background-color: #218838;
+  }

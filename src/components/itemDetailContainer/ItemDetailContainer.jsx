@@ -3,27 +3,28 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { getOneProduct } from '../../mock/fakeApi'
 import ItemDetail from './ItemDetail'
+import { useParams } from 'react-router-dom'
 
 const ItemDetailContainer = () => {
+
+  const {itemId} = useParams()
 
     const [producto,setProducto] = useState({})
 
     useEffect(()=>{
-        getOneProduct('002')
-        .then((res)=>{
-        console.log("RES" , res) 
+        getOneProduct(itemId)
+        .then((res)=>{ 
         setProducto(res);
-        console.log("PRODUCTO ENCONTRADO" , producto)
+        
     })
         .catch((error)=> console.log(error))
-    },[])
+    },[itemId])
 
 
   return (
     <div>
-        <h1>ItemDetailContainer</h1>
+        <h1>Detalle de producto:</h1>
         <ItemDetail producto={producto}/>
-
     </div>
   )
 }

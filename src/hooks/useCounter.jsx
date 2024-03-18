@@ -8,7 +8,7 @@ export function useCounter(stock) {
     }
 
     const sumar = () => {
-        if (count < stock) setCount(count + 1) ,console.log('hola');
+        if (count < stock) setCount(count + 1);
     }
 
     return { count, restar, sumar }
