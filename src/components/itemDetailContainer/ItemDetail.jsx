@@ -18,6 +18,7 @@ const ItemDetail = ({ producto }) => {
   <Card>
     <Row>
       <Col xs={12} lg={4}> 
+      <h1>Detalle de producto:</h1>
         <Card.Img variant="top" src={producto.urlImagen} />
       </Col>
       <Col xs={12} lg={8}>
