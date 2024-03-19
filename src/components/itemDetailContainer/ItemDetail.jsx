@@ -14,11 +14,12 @@ const ItemDetail = ({ producto }) => {
   return (
     <>
 <div className="d-flex justify-content-center">
+
 <Col xs={11} md={11} lg={11} className="mb-4">
+<h1>Detalle de producto:</h1>
   <Card>
     <Row>
       <Col xs={12} lg={4}> 
-      <h1>Detalle de producto:</h1>
         <Card.Img variant="top" src={producto.urlImagen} />
       </Col>
       <Col xs={12} lg={8}>
