@@ -32,6 +32,8 @@ const ItemDetail = ({ producto }) => {
           <Button variant="outline-success" className="mb-2">
             Stock: {producto.stock}
           </Button>
+          {compra && <p>Producto {producto.nombreProducto} agregado al carrito 😊</p>}
+          { !compra && producto.stock < 10 && <p>Apurate a agregar el producto al carrito !!! 🙌</p>}
           {compra ? <button>Ir al carrito</button> : <ItemCount stock={producto.stock} onAdd={onAdd} />}
         </Card.Body>
       </Col>

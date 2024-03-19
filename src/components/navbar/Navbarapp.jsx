@@ -20,7 +20,7 @@ function Navbarapp(props) {
             <Nav.Link as={NavLink} href='/'>Home</Nav.Link>
             <Nav.Link href="#pricing">Contacto</Nav.Link>
             <NavDropdown title="Categorias" id="collapsible-nav-dropdown">
-              <NavDropdown.Item as={NavLink} href="categorias/Literatura">Literatura</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/categorias/Literatura">Literatura</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Fantasia">Fantasia</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Misterio">Misterio</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Romance">Romance</NavDropdown.Item>

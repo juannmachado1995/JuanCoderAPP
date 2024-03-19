@@ -3,6 +3,7 @@ import { getProducts } from '../../mock/fakeApi';
 import ItemList from './ItemList';
 import './itemListContainer.css'
 import { useParams } from 'react-router-dom';
+import Loader from '../loader/Loader'
 
 const ItemListContainer = (props) => {
 
@@ -25,8 +26,10 @@ const ItemListContainer = (props) => {
   },[categoria])
  
   if(loading){
-    return <h1>Cargando...</h1>
+    return <Loader/>
   }
+
+  
 
   return (
     <>
