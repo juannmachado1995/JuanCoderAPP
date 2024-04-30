@@ -18,10 +18,9 @@ function Navbarapp(props) {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={NavLink} href='/'>Home</Nav.Link>
-            <Nav.Link href="#pricing">Contacto</Nav.Link>
             <NavDropdown title="Categorias" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={NavLink} to="/categorias/Literatura">Literatura</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} href="categorias/Fantasia">Fantasia</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} href="categorias/Fantasía">Fantasía</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Misterio">Misterio</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Romance">Romance</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} href="categorias/Ficción">Ficción</NavDropdown.Item>
@@ -31,14 +30,8 @@ function Navbarapp(props) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Ubicacion</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Sobre Nosotros
-            </Nav.Link>
-          </Nav>
         </Navbar.Collapse>
-        <CardWidget counter={4} />
+        <Link to='/cart'><CardWidget/></Link>
       </Container>
     </Navbar>
   );
